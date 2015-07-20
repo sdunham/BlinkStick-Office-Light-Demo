@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$('#bs_toggle').click(function(e){
+	//Light Toggle Demo
+	$('.bs_toggle').click(function(e){
 		e.preventDefault();
 		$.post('/toggle-light', function(res){
 			console.log(res);
@@ -9,6 +10,22 @@ $(document).ready(function(){
 			else{
 				//Do something to indicate light is off
 			}
+		});
+	});
+
+	//Runner Blink Demo
+	$('.runner_blink').click(function(e){
+		e.preventDefault();
+		$.post('/runner-blink', function(res){
+			console.log(res);
+		});
+	});
+
+	//Random Morph Demo
+	$('.random_morph').click(function(e){
+		e.preventDefault();
+		$.post('/random-morph', function(res){
+			console.log(res);
 		});
 	});
 });
