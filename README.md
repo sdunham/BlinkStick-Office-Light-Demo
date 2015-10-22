@@ -13,7 +13,8 @@ Demo showing how the BlinkStick node library can be used to create a simple web 
 *TODO*
 
 # Run
-`npm start`
+1. `npm start`
+2. Navigate to http://localhost:3000/
 
 # Future Features (TODOS)
 - Migrate to a better framework (Sails?)
